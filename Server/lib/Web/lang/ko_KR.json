@@ -1,6 +1,6 @@
 {
 	"GLOBAL": {
-		"GPL": "<div style='color: #666;'>글자로 놀자! 끄투 온라인 Copyright (C) {년도} {배포자}({이메일 등})<br>이 프로그램은 제품에 대한 어떠한 형태의 보증도 제공되지 않습니다.<br>이 프로그램은 자유 소프트웨어이며 배포 규정을 만족시키는 조건 아래 자유롭게 재배포할 수 있습니다.<br>이에 대한 자세한 사항은 본 프로그램의 구현을 담은 다음 레포지토리에서 확인하십시오: <a target='_blank' href='{이 서버의 소스 코드 위치}'>{이 서버의 소스 코드 위치}</a></div>",
+		"GPL": "<div style='color: #666;'>끄투를 새롭게! 모레미 끄투 2026 한입 스튜디오(kaekkk@gmail.com)<br>라이선스 관련 정보는 인게임 도움말에서 확인할 수 있어요.</div>",
 
 		"CREATOR":	"개발자 블로그",
 		"HOME":		"FA{home}",
@@ -108,19 +108,15 @@
 	"login": {
 		"title": "로그인",
 		"loginWith": "로그인 방법을 선택하세요.",
-		"withDaldalso": "달달소 아이디로 로그인",
-		"withNaver": "네이버 아이디로 로그인",
-		"withFacebook": "페이스북 아이디로 로그인",
 		"withGoogle": "구글 아이디로 로그인",
-		"withTwitter": "트위터 아이디로 로그인",
+		"withTwitter": "X 아이디로 로그인",
 		"withKakao": "카카오 아이디로 로그인",
 		"withDiscord": "디스코드 아이디로 로그인",
-		"withTwitch": "트위치 아이디로 로그인",
 		"withGithub": "깃허브 아이디로 로그인",
-		"withLine": "라인 아이디로 로그인",
 		"withInstagram": "인스타그램 아이디로 로그인",
 		"withSpotify": "Spotify 아이디로 로그인",
-		"login_kkutu": "글자로 놀자! 끄투 온라인을 이용하시려면 로그인을 해 주세요."
+		"login_kkutu": "모레미끄투를 이용하시려면 로그인을 해주세요.",
+		"loginLegal": "끝말잇기를 새롭게! 모레미끄투 온라인을 로그인하시면 운영정책과 이용약관, 개인정보 처리방침에 동의하는 것으로 간주합니다."
 	},
 	"loginfail": {
 		"title": "로그인 실패",
@@ -128,8 +124,8 @@
 		"login": "로그인"
 	},
 	"kkutu": {
-		"title": "글자로 놀자! 끄투 온라인",
-		"version": "2.5.1",
+		"title": "끝말잇기를 새롭게! 모레미끄투",
+		"version": "1.0.0",
 		
 		"meta_desc": "온라인 끝말잇기, 앞말잇기, 자음퀴즈, 십자말풀이, 타자 대결까지! 끄투에서 어휘력의 제왕이 되어 보세요.",
 		"meta_keys": "끄투,kkutu,끝말잇기,온라인,웹,쿵쿵따,영어끝말잇기,영어쿵쿵따,시리토리,끝말잇기사이트,자음퀴즈,초성퀴즈,자퀴,십자말풀이,가로세로,타자,타자연습,앞말잇기",
@@ -160,7 +156,7 @@
 		"server_19": "고구마",
 		"serverEnter": "접속",
 		
-		"websocketUnsupport": "본 게임은 Internet Explorer(10), 크롬(16), 파이어폭스(11), 오페라(12.1), 사파리(6) 이상의 버전에서 지원합니다!<br>브라우저를 업데이트해 주세요.",
+		"websocketUnsupport": "본 게임은 크롬(16), 파이어폭스(11), 오페라(12.1), 사파리(6) 등 최신 버전에서 지원합니다!<br>브라우저를 업데이트해 주세요.",
 		"dictionarySupport": "사전 정보 제공:<a href='http://wordnet.princeton.edu' target='_blank'>WordNet</a><br><label style='color: #777777;'>WordNet 3.0 Copyright 2006 by Princeton University. All rights reserved.</label>",
 		"sandbox": "샌드박스 :: SDBX",
 		"etcSupport": "도움:<a href='http://cafe.naver.com/sdbx' target='_blank'>샌드박스 :: SDBX</a>",
@@ -536,8 +532,8 @@
 		"obtainMoney": "핑을 획득했습니다",
 		"sureConsume": "정말 이 항목을 사용합니까?",
 		
-		"dress": "프로필 관리",
-		"myExordial": "소개 한마디",
+		"dress": "꾸미기",
+		"myExordial": "소개",
 		"myExordialX": "100글자 이내",
 		"myMoremi": "내 모레미",
 		"category_all": "전체",
@@ -574,7 +570,7 @@
 		"cmd_shut": "(/shut <i>대상</i>) 대상의 모든 대화를 차단합니다. 차단된 상태에서 이 명령어를 다시 사용하면 차단이 해제됩니다.",
 		"cmd_id": "(/id <i>대상</i>) 대상의 식별 번호를 얻습니다.",
 		
-		"myId": "내 식별 번호: ",
+		"myId": "나의 식별 번호: ",
 		"send": "전송",
 		"help": "FA{question-circle}",
 		"helpText": "도움말",
