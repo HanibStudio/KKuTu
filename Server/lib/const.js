@@ -110,6 +110,14 @@ exports.RULE = {
 		big: false,
 		ewq: false
 	},
+	'MSQ': { lang: "ko",
+		rule: "Moqwi",
+		opts: [ "ijp" ],
+		time: 1,
+		ai: true,
+		big: false,
+		ewq: false
+	},
 	'KCW': { lang: "ko",
 		rule: "Crossword",
 		opts: [],
@@ -196,6 +204,7 @@ exports.EXAMPLE_TITLE = {
 	'en': "abcdefghij"
 };
 exports.INIT_SOUNDS = [ "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ" ];
+exports.INIT_VOWELS = [ "ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ" ];
 exports.MISSION_ko = [ "가", "나", "다", "라", "마", "바", "사", "아", "자", "차", "카", "타", "파", "하" ];
 exports.MISSION_en = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ];
 

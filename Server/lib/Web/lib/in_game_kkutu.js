@@ -56,14 +56,41 @@ var OPTIONS;
 var MAX_LEVEL = 360;
 var TICK = 30;
 var EXP = [];
-var BAD = new RegExp([ "느으*[^가-힣]*금마?", "니[^가-힣]*(엄|앰|엠)", "(ㅄ|ㅅㅂ|ㅂㅅ)", "미친(년|놈)?", "(병|븅|빙)[^가-힣]*신", "보[^가-힣]*지", "(새|섀|쌔|썌)[^가-힣]*(기|끼)", "섹[^가-힣]*스", "(시|씨|쉬|쒸)이*입?[^가-힣]*(발|빨|벌|뻘|팔|펄)", "십[^가-힣]*새", "씹", "(애|에)[^가-힣]*미", "자[^가-힣]*지", "존[^가-힣]*나", "좆|죶", "지랄", "창[^가-힣]*(녀|년|놈)", "fuck", "sex" ].join('|'), "g");
+var BAD = new RegExp([ 
+	"느으*[^가-힣]*금마?",
+	"니[^가-힣]*(엄|앰|엠)",
+	"(ㅄ|ㅅㅂ|ㅂㅅ)",
+	"미친(년|놈)?",
+	"(병|븅|빙)[^가-힣]*신",
+	"보[^가-힣]*지",
+	"(새|섀|쌔|썌)[^가-힣]*(기|끼)",
+	"섹[^가-힣]*스",
+	"(시|씨|쉬|쒸)이*입?[^가-힣]*(발|빨|벌|뻘|팔|펄)",
+	"십[^가-힣]*새",
+	"씹",
+	"(애|에)[^가-힣]*미",
+	"자[^가-힣]*지",
+	 "존[^가-힣]*나",
+	 "좆|죶",
+	 "지랄",
+	 "창[^가-힣]*(녀|년|놈)",
+	 "fuck",
+	 "sex",
+	"끄[^가-힣]*투[^가-힣]*코[^가-힣]*리[^가-힣]*아",
+	"끄[^가-힣]*코",
+	"끄[^가-힣]*리",
+	"끄[^가-힣]*투[^가-힣]*리[^가-힣]*오",
+	"마[^가-힣]*한[^가-힣]*끄[^가-힣]*투",
+	"분[^가-힣]*홍[^가-힣]*끄[^가-힣]*투",
+	"플[^가-힣]*러[^가-힣]*스[^가-힣]*끄[^가-힣]*투",
+	"B[^가-힣]*F[^가-힣]*끄[^가-힣]*투" ].join('|'), "g");
 
 var ws, rws;
 var $stage;
 var $sound = {};
 var $_sound = {}; // 현재 재생 중인 것들
 var $data = {};
-var $lib = { Classic: {}, Jaqwi: {}, Crossword: {}, Typing: {}, Hunmin: {}, Daneo: {}, Sock: {} };
+var $lib = { Classic: {}, Jaqwi: {}, Moqwi: {}, Crossword: {}, Typing: {}, Hunmin: {}, Daneo: {}, Sock: {} };
 var $rec;
 var mobile;
 
@@ -767,7 +794,7 @@ $(document).ready(function(){
 		var fileName = "KKuTu" + (
 			date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " "
 			+ date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds()
-		) + ".kkt";
+		) + ".replay";
 		var $a = $("<a>").attr({
 			'download': fileName,
 			'href': url
@@ -1286,6 +1313,29 @@ $lib.Jaqwi.turnEnd = function(id, data){
 	}
 };
 
+/**
+ * Rule the words! KKuTu Online
+ * Copyright (C) 2017 JJoriping(op@jjo.kr)
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+$lib.Moqwi.roundReady = $lib.Jaqwi.roundReady
+$lib.Moqwi.turnStart = $lib.Jaqwi.turnStart
+$lib.Moqwi.turnGoing = $lib.Jaqwi.turnGoing
+$lib.Moqwi.turnHint = $lib.Jaqwi.turnHint
+$lib.Moqwi.turnEnd = $lib.Jaqwi.turnEnd
 /**
  * Rule the words! KKuTu Online
  * Copyright (C) 2017 JJoriping(op@jjo.kr)
