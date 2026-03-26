@@ -64,7 +64,7 @@ const PORT = process.env['KKUTU_PORT'];
 process.on('uncaughtException', function(err){
 	var text = `:${PORT} [${new Date().toLocaleString()}] ERROR: ${err.toString()}\n${err.stack}\n`;
 	
-	File.appendFile("/jjolol/KKUTU_ERROR.log", text, function(res){
+	File.appendFile("../../log/KKUTU_ERROR.log", text, function(res){
 		JLog.error(`ERROR OCCURRED ON THE MASTER!`);
 		console.log(text);
 	});
