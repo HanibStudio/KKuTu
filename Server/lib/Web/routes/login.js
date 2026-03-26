@@ -18,7 +18,6 @@
 
 const MainDB	 = require("../db");
 const JLog	 = require("../../sub/jjlog");
-// const Ajae	 = require("../../sub/ajaejs").checkAjae;
 const passport = require('passport');
 const glob = require('glob-promise');
 const GLOBAL	 = require("../../sub/global.json");
@@ -65,7 +64,7 @@ exports.run = (Server, page) => {
 				successRedirect: '/',
 				failureRedirect: '/loginfail'
 			}))
-			passport.use(new auth.config.strategy(auth.strategyConfig, auth.strategy(process, MainDB /*, Ajae */)));
+			passport.use(new auth.config.strategy(auth.strategyConfig, auth.strategy(process, MainDB)));
 			strategyList[auth.config.vendor] = {
 				vendor: auth.config.vendor,
 				displayName: auth.config.displayName,
