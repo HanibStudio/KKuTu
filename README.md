@@ -1,14 +1,5 @@
-# KKuTu
-- Made by [JJoriping](http://blog.jjo.kr/)
-- Special thanks to
-	* [샌드박스 :: SDBX](http://cafe.naver.com/sdbx)
-	* [SWMaestro](http://www.swmaestro.kr)
-	* You to have interested in this repository :)
-- [KKuTu Wiki](https://github.com/JJoriping/KKuTu/wiki)
-- [프리 서버 목록](http://jjo.kr/kkutu)
-- Languages
-	* [한국어](#한국어)
-	* [English](#english)
+# 모레미끄투
+앞서, 본 레포지토리는 GPL 라이선스에 따라 공개된 소스코드입니다.
 
 ## 한국어
 > 글자로 놀자! 끄투 온라인
