@@ -6,7 +6,6 @@
 		"HOME":		"FA{home}",
 		"GAMES":	"게임",
 		"GAMES_KKUTU":	"끄투",
-		"GAMES_FATES":	"카드 뽑기",
 		"GALLERY": "갤러리",
 		"LEBS":		"LEBS",
 		"ETC":		"???",
@@ -225,13 +224,6 @@
 		"turnError_406": "깐깐!",
 		"turnError_407": "다른 주제",
 		"turnError_409": "이미 쓰인 단어",
-		"checkAgeAsk": "끄투에서는 본인 확인을 위해 생년월일을 입력받고 있습니다. 입력된 생년월일은 본인 확인 및 내부 정보 처리에만 이용되며 제3자에게 공개되지 않습니다.\n본인 확인을 진행합니까?",
-		"checkAgeNo": "입력 값이 올바르지 않습니다. 다시 확인해 주세요.",
-		"checkAgeInput1": "생년월일 중 연도를 입력해 주세요. (4자리)",
-		"checkAgeInput2": "생년월일 중 월을 입력해 주세요. (1~12 중)",
-		"checkAgeInput3": "생년월일 중 일을 입력해 주세요. (1~31 중)",
-		"checkAgeSure": "아래 입력한 생년월일이 맞습니까? 입력된 생년월일은 본인 확인 및 내부 정보 처리에만 이용되며 제3자에게 공개되지 않습니다.",
-		"checkAgeCancel": "본인 확인을 취소하고 미루겠습니까?",
 		
 		"UserList": "FA{users}접속자 목록",
 		"RoomList": "FA{bars}방 목록",
@@ -691,21 +683,6 @@
 		"wpFail_406": "실패 - 신청 기준에 맞지 않는 단어입니다.",
 		"wpFail_409": "실패 - 이미 등록된 단어입니다.",
 		"wpFail_429": "실패 - 잠시 후 시도해 주세요."
-	},
-	"game/fates": {
-		"title": "카드 뽑기",
-		
-		"fcTitle": "카드 뽑기",
-		"fcRule1": "제한된 시간 안에 W키를 눌러 목표 카드와 색을 맞추세요! 기회는 단 한 번입니다!",
-		"fcRule2": "이 페이지는 소리가 재생됩니다.",
-		"fcReady": "W키를 눌러 시작합니다.",
-		"fcSet": "준비",
-		"fcSuccess": "성공!",
-		"fcGetScore": "점수 획득",
-		"fcLevelUp": "레벨 업!",
-		"fcNowLevel": "현재 레벨",
-		"fcFail": "실패!",
-		"fcRestart": "W키를 눌러 다시 하기"
 	},
 	"legal/agreement": {
 		"title": "서비스 이용 약관"

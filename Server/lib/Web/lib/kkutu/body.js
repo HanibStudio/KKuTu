@@ -169,42 +169,6 @@ function connectToRoom(chan, rid){
 		console.warn(L['error'], e);
 	};
 }
-function checkAge(){
-	if(!confirm(L['checkAgeAsk'])) return send('caj', { answer: "no" }, true);
-	
-	while(true){
-		var input = [], lv = 1;
-		
-		while(lv <= 3){
-			var str = prompt(L['checkAgeInput' + lv]);
-			
-			if(!str || isNaN(str = Number(str))){
-				if(--lv < 1) break; else continue;
-			}
-			if(lv == 1 && (str < 1000 || str > 2999)){
-				alert(str + "\n" + L['checkAgeNo']);
-				continue;
-			}
-			if(lv == 2 && (str < 1 || str > 12)){
-				alert(str + "\n" + L['checkAgeNo']);
-				continue;
-			}
-			if(lv == 3 && (str < 1 || str > 31)){
-				alert(str + "\n" + L['checkAgeNo']);
-				continue;
-			}
-			input[lv++ - 1] = str;
-		}
-		if(lv == 4){
-			if(confirm(L['checkAgeSure'] + "\n"
-			+ input[0] + L['YEAR'] + " "
-			+ input[1] + L['MONTH'] + " "
-			+ input[2] + L['DATE'])) return send('caj', { answer: "yes", input: [ input[1], input[2], input[0] ] }, true);
-		}else{
-			if(confirm(L['checkAgeCancel'])) return send('caj', { answer: "no" }, true);
-		}
-	}
-}
 function onMessage(data){
 	var i;
 	var $target;
@@ -241,7 +205,6 @@ function onMessage(data){
 			if(location.hash[1]) tryJoin(location.hash.slice(1));
 			updateUI(undefined, true);
 			welcome();
-			if(data.caj) checkAge();
 			updateCommunity();
 			break;
 		case 'conn':
