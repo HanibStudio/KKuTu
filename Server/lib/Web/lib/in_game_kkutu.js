@@ -2364,6 +2364,7 @@ function onMessage(data){
 				location.href = "/login?desc=login_kkutu"; */
 			}else if(data.code == 403){
 				loading();
+				playBGM('lobby');
 			}else if(data.code == 406){
 				if($stage.dialog.quick.is(':visible')){
 					$data._preQuick = false;
